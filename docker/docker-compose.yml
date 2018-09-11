@@ -2,12 +2,16 @@ version: "2"
 
 services:
 
-# ------> asset ------>
-    asset_22i7ugtjlxwf59u:
-        container_name: asset_22i7ugtjlxwf59u
-        image: node:alpine
-        working_dir: /var/www/assets
+# ------> node ------>
+    node_22i7v46jlxywfjh:
+        container_name: node_22i7v46jlxywfjh
+        image: node:10.5-alpine
+        user: "node"
+        working_dir: /node
         volumes:
-            - ../assets:/var/www/assets
-            - ../public:/var/www/public
-# <------ asset <------
+            - .././:/node
+        environment:
+            NODE_ENV: dev
+        expose:
+            - 8081
+# <------ node <------
