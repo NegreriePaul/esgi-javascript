@@ -2,7 +2,7 @@ var str = "hello world";
 var sentence = "on est champion du monde mon frère";
 var obj = new Object();
 var prop = "fromage thauvin";
-var input = "Mbappé est le meilleur";
+var input = "Mbappé est le meilleur au monde";
 var clef = "N'jie";
 
 
