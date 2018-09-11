@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+
+# ------> asset ------>
+    asset_22i7ugtjlxwf59u:
+        container_name: asset_22i7ugtjlxwf59u
+        image: node:alpine
+        working_dir: /var/www/assets
+        volumes:
+            - ../assets:/var/www/assets
+            - ../public:/var/www/public
+# <------ asset <------
