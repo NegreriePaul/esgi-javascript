@@ -6,7 +6,7 @@ var input = "Mbappé est le meilleur au monde";
 var clef = "N'jie";
 
 
-console.log(ucFirst(str));
+console.log(ucfirst(str));
 console.log(capitalize(sentence));
 console.log(camelCase(str));
 console.log(snake_case(sentence));
@@ -17,7 +17,7 @@ console.log(yoda(str));
 console.log(vig(input, clef));
 
 
-function ucFirst(str) {
+function ucfirst(str) {
   if (str.length > 0) {
     return str[0].toUpperCase() + str.substring(1);
   } else {
